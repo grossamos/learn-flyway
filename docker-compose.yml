@@ -1,0 +1,14 @@
+version: "3"
+services:
+  ultra-database:
+    container_name: flyway-database
+    image: postgres
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=flywaydb
+    volumes:
+      - postgres-learn-flyway:/var/lib/postgresql/data
+volumes:
+  postgres-learn-flyway:
