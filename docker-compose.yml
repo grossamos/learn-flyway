@@ -1,6 +1,6 @@
 version: "3"
 services:
-  ultra-database:
+  flyway-database:
     container_name: flyway-database
     image: postgres
     ports:
